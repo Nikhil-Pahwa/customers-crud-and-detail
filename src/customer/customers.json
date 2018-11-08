@@ -1,0 +1,26 @@
+[
+    {
+        "id": 12,
+        "name": "Nikhil",
+        "address": 30,
+        "city": "gurgaon",
+        "country": "India",
+        "zipCode": "122002"
+    },
+    {
+        "id": 32,
+        "name": "Amit",
+        "address": 31,
+        "city": "Mumbai",
+        "country": "India",
+        "zipCode": "122009"
+    },
+    {
+        "id": 12,
+        "name": "Vivek",
+        "address": 29,
+        "city": "Bangalore",
+        "country": "India",
+        "zipCode": "12005"
+    }
+]
