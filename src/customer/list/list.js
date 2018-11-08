@@ -1,22 +1,41 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-const customers = require('../customers.json');
+let customers = require('../customers.json');
 
 class List extends React.Component {
-    
-    constructor() {
-        super(); 
+
+    constructor(props) {
+        super(props);
+        this.filteredCustomers = customers;
+    }
+
+    openCustomer(id) {
+        console.log(this.props);
+        // this.props.history.push(id);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.filteredCustomers = customers.filter((customer) => {
+            return customer.name.toLowerCase().indexOf(nextProps.searchedCustomer.toLowerCase()) > -1
+        });
     }
 
     render() {
-        return(
+        return (
             <div>
-                {customers.map((customer)=>{
+                {this.filteredCustomers.map((customer) => {
                     return (
-                        <Link key={customer.id} to={`/detail/${customer.id}`} >{customer.name}</Link> 
+                        <div key={customer.id} onClick={() => this.openCustomer(customer.id)}>
+                            <div>{customer.name}</div>
+                            <div>
+                                <span>{customer.city}</span>
+                                <span>{customer.country}</span>
+                                <span>{customer.zipCode}</span>
+                            </div>
+                        </div>
                     )
-                 })}
+                })}
             </div>
         );
     }
