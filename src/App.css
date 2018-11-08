@@ -30,3 +30,19 @@
     transform: rotate(360deg);
   }
 }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.bg-dark {
+  background-color: #343a40!important;
+}
+
+.navbar + div , .navbar + div + div{
+  margin-top: 70px;
+}

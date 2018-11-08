@@ -1,0 +1,25 @@
+.avatar img {
+    width: 41px;
+    border-radius: 50%;
+}
+
+.avatar + div {
+    padding-left: 40px;
+}
+
+.customer-name{
+    color: blue;
+    float: left;
+}
+
+.customer-info {
+    cursor: pointer;
+    border-bottom: 1px solid #787878;
+    float: left;
+    padding: 12px 0 18px;
+    border-bottom-style: dotted;
+}
+
+.small-info{
+    float: left;
+}

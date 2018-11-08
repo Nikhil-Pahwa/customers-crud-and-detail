@@ -16,8 +16,8 @@ class Search extends React.Component {
 
     render() {
         return (
-            <div>Search
-                <input type="text" value={this.state.searchText} onChange={this.handleSearching} />
+            <div>
+                <input className="form-control form-control-dark w-100" type="text" value={this.state.searchText} onChange={this.handleSearching} placeholder="Search" aria-label="Search" />
             </div>
         );
     }
