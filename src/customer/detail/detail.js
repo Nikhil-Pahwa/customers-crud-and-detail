@@ -5,9 +5,7 @@ class Detail extends React.Component {
 
     constructor(props) {
         super(props);
-        const selectedCustomer = customers.filter((cust) => {
-            return cust.id == this.props.match.params.id;
-        })[0];
+        const selectedCustomer = this.filteredList(this.props.openCustomer)
 
         this.state = {
             isEditMode: false,
@@ -25,6 +23,19 @@ class Detail extends React.Component {
                 [event.target.name]: event.target.value
             }
         })
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({
+            ...this.state,
+            selectedCustomer: this.filteredList(nextProps.openCustomer)
+        })
+    }
+
+    filteredList(custId) {
+        return customers.filter((cust) => {
+            return cust.id == custId;
+        })[0];
     }
 
     saveCustomer() {

@@ -3,15 +3,18 @@ import logo from './logo.svg';
 import List from './customer/list/list';
 import Search from './customer/search/search';
 import Detail from './customer/detail/detail';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+
+let customers = require('./customer/customers.json');
+
 
 class App extends Component {
 
   constructor(props) {
     super();
     this.state = {
-      searchedText: ''
+      searchedText: '',
+      custId: customers[0].id
     }
     this.handleSearching = this.handleSearching.bind(this);
   }
@@ -25,14 +28,10 @@ class App extends Component {
       <div className="App">
         <div className="col-sm-2">
           <Search searchText={this.handleSearching}></Search>
-          <List searchedCustomer={this.state.searchedText}></List>
+          <List searchedCustomer={this.state.searchedText} openCustomer={(customerId) => this.setState({ ...this.state, custId: customerId })}></List>
         </div>
         <div className="col-sm-10">
-          <Router>
-            <Switch>
-              <Route path="/detail/:id" component={Detail} exact />
-            </Switch>
-          </Router>
+          <Detail openCustomer={this.state.custId}></Detail>
         </div>
       </div>
     );

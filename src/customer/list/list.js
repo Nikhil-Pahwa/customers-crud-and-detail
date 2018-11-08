@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 let customers = require('../customers.json');
 
 class List extends React.Component {
@@ -8,11 +9,6 @@ class List extends React.Component {
     constructor(props) {
         super(props);
         this.filteredCustomers = customers;
-    }
-
-    openCustomer(id) {
-        console.log(this.props);
-        // this.props.history.push(id);
     }
 
     componentWillReceiveProps(nextProps) {
@@ -26,7 +22,7 @@ class List extends React.Component {
             <div>
                 {this.filteredCustomers.map((customer) => {
                     return (
-                        <div key={customer.id} onClick={() => this.openCustomer(customer.id)}>
+                        <div key={customer.id} onClick={() => this.props.openCustomer(customer.id)}>
                             <div>{customer.name}</div>
                             <div>
                                 <span>{customer.city}</span>
