@@ -1,0 +1,32 @@
+.avatar-big{
+    float: left;
+}
+
+.avatar-big img{
+    width: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 230px;
+}
+
+.form-horizontal{
+    float: left;
+    width: 78%;
+} 
+
+.form-group .col-sm-10{
+    text-align: left;
+    padding-top: 7px;
+}
+
+.form-horizontal .form-group {
+    height: 35px
+}
+
+h1 {
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 15px;
+    margin: 0 0 20px;
+    font-size: 30px;
+}

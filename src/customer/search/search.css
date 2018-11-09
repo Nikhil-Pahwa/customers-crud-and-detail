@@ -1,0 +1,13 @@
+.search-container{
+    position: relative;
+}
+
+.cross-icon{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: MONOSPACE;
+    cursor: pointer;
+}

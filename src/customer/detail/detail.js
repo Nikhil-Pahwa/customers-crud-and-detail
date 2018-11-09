@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './detail.css';
 const customers = require('../customers.json');
 
 class Detail extends React.Component {
@@ -52,8 +53,12 @@ class Detail extends React.Component {
         const customer = this.state.selectedCustomer;
         return (
             <div>
+                <h1> Customer Detail </h1>
                 <div className="container">
-                    <form className="form-horizontal" action="/action_page.php">
+                    <div className="avatar-big">
+                        <img src={customer.avatarUrl} />
+                    </div>
+                    <form className="form-horizontal">
                         <div className="form-group">
                             <label className="control-label col-sm-2" >Full Name</label>
                             <div className="col-sm-10">
@@ -86,8 +91,8 @@ class Detail extends React.Component {
                         </div>
                         <div className="form-group">
                             <div className="col-sm-offset-2 col-sm-10">
-                                {this.state.isEditMode ? <div><button type="button" className="btn btn-default" onClick={() => this.cancelSave()}>Cancel</button>
-                                    <button type="button" className="btn btn-default" onClick={() => this.saveCustomer()}>Save</button></div> : <button type="button" className="btn btn-default" onClick={() => this.setState({ isEditMode: true })} >Edit</button>}
+                                {this.state.isEditMode ? <div className="btn-toolbar"><button type="button" className="btn btn-default" onClick={() => this.cancelSave()}>Cancel</button>
+                                    <button type="button" className="btn btn-primary" onClick={() => this.saveCustomer()}>Save</button></div> : <button type="button" className="btn btn-primary" onClick={() => this.setState({ isEditMode: true })} >Edit</button>}
                             </div>
                         </div>
                     </form>

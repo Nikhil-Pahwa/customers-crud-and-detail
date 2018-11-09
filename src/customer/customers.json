@@ -1,26 +1,92 @@
 [
     {
-        "id": 12,
-        "name": "Nikhil",
+        "id": 1,
+        "name": "Nikhil Pahwa",
         "address": 30,
-        "city": "gurgaon",
+        "city": "Gurgaon",
         "country": "India",
-        "zipCode": "122002"
+        "zipCode": "122002",
+        "avatarUrl": "../resources/avatars/1.jpeg"
     },
     {
-        "id": 32,
-        "name": "Amit",
-        "address": 31,
-        "city": "Mumbai",
-        "country": "India",
-        "zipCode": "122009"
+        "id": 2,
+        "name": "Paul Walker",
+        "address": 40,
+        "city": "California",
+        "country": "USA",
+        "zipCode": "122009",
+        "avatarUrl": "../resources/avatars/2.jpeg"
     },
     {
-        "id": 31,
-        "name": "Vivek",
-        "address": 29,
-        "city": "Bangalore",
+        "id": 3,
+        "name": "Chris Pratt",
+        "address": 39,
+        "city": "California",
+        "country": "USA",
+        "zipCode": "90002",
+        "avatarUrl": "../resources/avatars/3.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Henry Cavill",
+        "address": 35,
+        "city": "Jersey",
+        "country": "USA",
+        "zipCode": "07001",
+        "avatarUrl": "../resources/avatars/4.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Scarlett Johansson",
+        "address": 33,
+        "city": "Jersey",
+        "country": "USA",
+        "zipCode": "10001",
+        "avatarUrl": "../resources/avatars/5.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Liam Hemsworth",
+        "address": 28,
+        "city": " Melbourne",
+        "country": "Australia",
+        "zipCode": "30002",
+        "avatarUrl": "../resources/avatars/6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Anushka Sharma",
+        "address": 30,
+        "city": "Ayodhya",
         "country": "India",
-        "zipCode": "12005"
+        "zipCode": "224123",
+        "avatarUrl": "../resources/avatars/7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Akshay Kumar",
+        "address": 51,
+        "city": "Amritsar",
+        "country": "India",
+        "zipCode": "143001",
+        "avatarUrl": "../resources/avatars/8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Deepika Padukone",
+        "address": 32,
+        "city": "Copenhagen",
+        "country": "Denmark",
+        "zipCode": "1050",
+        "avatarUrl": "../resources/avatars/9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Sushmita Sen",
+        "address": 42,
+        "city": "Hyderabad",
+        "country": "India",
+        "zipCode": "500003",
+        "avatarUrl": "../resources/avatars/10.jpeg"
     }
 ]

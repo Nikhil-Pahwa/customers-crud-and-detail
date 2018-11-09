@@ -46,3 +46,15 @@
 .navbar + div , .navbar + div + div{
   margin-top: 70px;
 }
+
+.sidebar {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.bg-light {
+  background-color: #f8f9fa!important;
+}

@@ -32,13 +32,20 @@ class App extends Component {
           <a className="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Customer Management</a>
         </nav>
 
-
-        <div className="col-sm-2">
-          <Search searchText={this.handleSearching}></Search>
-          <List searchedCustomer={this.state.searchedText} openCustomer={(customerId) => this.setState({ ...this.state, custId: customerId })}></List>
-        </div>
-        <div className="col-sm-10">
-          <Detail openCustomer={this.state.custId}></Detail>
+        <div className="container-fluid">
+          <div className="row">
+            <nav className="col-md-2 d-none d-md-block bg-light sidebar">
+              <div className="sidebar-sticky">
+                <ul className="nav flex-column">
+                  <Search searchText={this.handleSearching}></Search>
+                  <List searchedCustomer={this.state.searchedText} openCustomer={(customerId) => this.setState({ ...this.state, custId: customerId })}></List>
+                </ul>
+              </div>
+            </nav>
+            <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-4">
+              <Detail openCustomer={this.state.custId}></Detail>
+            </main>
+          </div>
         </div>
       </div>
     );
