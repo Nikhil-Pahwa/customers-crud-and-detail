@@ -53,8 +53,43 @@
   left: 0;
   z-index: 100;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  background-color: #f8f9fa!important;
+  overflow-y: scroll;
+  height: 90vh;
 }
 
 .bg-light {
   background-color: #f8f9fa!important;
+}
+
+main {
+  height: 90vh;
+}
+
+contact-me {
+    position: absolute;
+    bottom: 50px;
+    left: 30vw; 
+}
+
+/* Custom scollbar styling */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

@@ -4,6 +4,7 @@ import List from './customer/list/list';
 import Search from './customer/search/search';
 import Detail from './customer/detail/detail';
 import './App.css';
+import '../node_modules/contact-me-custom/bin/elements.js';
 
 let customers = require('./customer/customers.json');
 
@@ -44,6 +45,7 @@ class App extends Component {
             </nav>
             <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-4">
               <Detail openCustomer={this.state.custId}></Detail>
+              <contact-me author="Nikhil Pahwa" label="React!"></contact-me>
             </main>
           </div>
         </div>

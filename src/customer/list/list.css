@@ -22,10 +22,23 @@
 
 .customer-info {
     cursor: pointer;
+    position: relative;
     border-bottom: 1px solid #787878;
     float: left;
     padding: 12px 0 18px;
     border-bottom-style: dotted;
+}
+
+.customer-info:hover .delete-record{
+    display: block;
+}
+
+.delete-record{
+    display: none;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    color: black;
 }
 
 .customer-info.active .customer-name {

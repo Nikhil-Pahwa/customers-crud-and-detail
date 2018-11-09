@@ -29,6 +29,7 @@ class Detail extends React.Component {
     componentWillReceiveProps(nextProps) {
         this.setState({
             ...this.state,
+            isEditMode: false,
             selectedCustomer: this.filteredList(nextProps.openCustomer)
         })
     }
@@ -46,7 +47,7 @@ class Detail extends React.Component {
 
     cancelSave() {
         this.setState({ isEditMode: false });
-        this.setState({ selectedCustomer: this.state.inititalCustomer });
+        this.setState({ selectedCustomer: this.state.selectedCustomer });
     }
 
     render(props) {
