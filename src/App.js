@@ -4,7 +4,7 @@ import List from './customer/list/list';
 import Search from './customer/search/search';
 import Detail from './customer/detail/detail';
 import './App.css';
-import '../node_modules/contact-me-custom/bin/elements.js';
+// import '../node_modules/contact-me-custom/bin/elements.js';
 
 let customers = require('./customer/customers.json');
 
